@@ -6,16 +6,21 @@ public class Circle : MonoBehaviour
     float speedX, speedY;
     Rigidbody2D rb;
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    private GameObject currentTeleporter;
+
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
     }
 
-    // Update is called once per frame
     void Update()
     {
         Movement();
+
+        if (currentTeleporter != null)
+        {
+            transform.position = currentTeleporter.GetComponent<Teleporter>().getDestination().position;
+        }
     }
 
     void Movement()
@@ -23,5 +28,24 @@ public class Circle : MonoBehaviour
         speedX = Input.GetAxisRaw("Horizontal") * movSpeed;
         speedY = Input.GetAxisRaw("Vertical") * movSpeed;
         rb.linearVelocity = new Vector2(speedX, speedY);
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Teleporter"))
+        {
+            currentTeleporter = collision.gameObject;
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Teleporter"))
+        {
+            if (collision.gameObject == currentTeleporter)
+            {
+                currentTeleporter = null;
+            }
+        }
     }
 }
