@@ -6,7 +6,7 @@ public class Enemy : MonoBehaviour
     public int speed;
     public Transform safeArea;
 
-    private new Rigidbody2D rb { get { return GetComponent<Rigidbody2D>() ?? default(Rigidbody2D); } }
+    private Rigidbody2D rb { get { return GetComponent<Rigidbody2D>() ?? default(Rigidbody2D); } }
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()

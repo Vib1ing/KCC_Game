@@ -27,10 +27,6 @@ public class enemyPatrol : MonoBehaviour
         if (Vector2.Distance(transform.position, currentPoint.position) < 0.5f)
         {
             currentPoint = (currentPoint == pointB.transform) ? pointA.transform : pointB.transform;
-            currentPoint = (currentPoint == pointC.transform) ? pointB.transform : pointC.transform;
-            currentPoint = (currentPoint == pointD.transform) ? pointC.transform : pointD.transform;
-            currentPoint = (currentPoint == pointA.transform) ? pointD.transform : pointA.transform;
-
         }
     }
 
