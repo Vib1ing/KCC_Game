@@ -8,9 +8,12 @@ public class Circle : MonoBehaviour
 
     private GameObject currentTeleporter;
 
+    public Canvas canvas;
+
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        canvas.enabled = false;
     }
 
     void Update()
@@ -36,6 +39,9 @@ public class Circle : MonoBehaviour
         {
             currentTeleporter = collision.gameObject;
         }
+        if (collision.CompareTag("NewThing")){
+            canvas.enabled = true;
+        }
     }
 
     private void OnTriggerExit2D(Collider2D collision)
@@ -47,5 +53,6 @@ public class Circle : MonoBehaviour
                 currentTeleporter = null;
             }
         }
+        canvas.enabled = false;
     }
 }
