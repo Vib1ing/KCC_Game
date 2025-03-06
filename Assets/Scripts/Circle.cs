@@ -9,11 +9,18 @@ public class Circle : MonoBehaviour
     private GameObject currentTeleporter;
 
     public Canvas canvas;
-
+    public Canvas canvas1;
+    public Canvas canvas2;
+    public Canvas canvas3;
+    public Canvas canvas4;
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         canvas.enabled = false;
+        canvas1.enabled = false;
+        canvas2.enabled = false;
+        canvas3.enabled = false;
+        canvas4.enabled = false;
     }
 
     void Update()
@@ -42,6 +49,18 @@ public class Circle : MonoBehaviour
         if (collision.CompareTag("NewThing")){
             canvas.enabled = true;
         }
+        if (collision.CompareTag("Fact1")){
+            canvas1.enabled = true;
+        }
+        if (collision.CompareTag("Fact2")){
+            canvas2.enabled = true;
+        }
+        if (collision.CompareTag("Fact3")){
+            canvas3.enabled = true;
+        }
+        if (collision.CompareTag("Fact4")){
+            canvas4.enabled = true;
+        }
     }
 
     private void OnTriggerExit2D(Collider2D collision)
@@ -54,5 +73,9 @@ public class Circle : MonoBehaviour
             }
         }
         canvas.enabled = false;
+        canvas1.enabled = false;
+        canvas2.enabled = false;
+        canvas3.enabled = false;
+        canvas4.enabled = false;
     }
 }

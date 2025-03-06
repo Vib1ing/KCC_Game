@@ -8,6 +8,10 @@ TagManager:
   - SafeArea
   - Wall
   - NewThing
+  - Fact1
+  - Fact2
+  - Fact3
+  - Fact4
   layers:
   - Default
   - TransparentFX
