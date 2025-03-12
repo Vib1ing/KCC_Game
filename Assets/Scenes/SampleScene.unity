@@ -79890,8 +79890,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1328931967}
   - component: {fileID: 1328931970}
-  - component: {fileID: 1328931969}
   - component: {fileID: 1328931968}
+  - component: {fileID: 1328931971}
   m_Layer: 0
   m_Name: Enemy (1)
   m_TagString: Untagged
@@ -79950,26 +79950,6 @@ CircleCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_Radius: 0.5
---- !u!114 &1328931969
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1328931966}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bdb0749cc1644834e9ee819b9828b2f1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  patrolPoints:
-  - {fileID: 1922641137}
-  - {fileID: 1523228819}
-  - {fileID: 1892649702}
-  - {fileID: 1159500071}
-  targetPoint: 0
-  speed: 5
-  safeArea: {fileID: 435990021}
 --- !u!212 &1328931970
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -80025,6 +80005,32 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1328931971
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1328931966}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de98a1ec5010bda4da334e7916f2e490, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  patrolPoints:
+  - {fileID: 1922641137}
+  - {fileID: 1523228819}
+  - {fileID: 1892649702}
+  - {fileID: 1159500071}
+  targetPoint: 0
+  speed: 5
+  safeArea: {fileID: 435990021}
+  projectilePrefab: {fileID: 724255035314166343, guid: 85f04e52c2eb6504b99a22d36c73ba94, type: 3}
+  projectileSpeed: 10
+  projectileSize: 4
+  fireRate: 5
+  spawnRadius: 1
+  projectileLifetime: 10
 --- !u!1 &1329893291
 GameObject:
   m_ObjectHideFlags: 0
@@ -134341,8 +134347,8 @@ GameObject:
   m_Component:
   - component: {fileID: 2131651167}
   - component: {fileID: 2131651169}
-  - component: {fileID: 2131651168}
   - component: {fileID: 2131651170}
+  - component: {fileID: 2131651171}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: Untagged
@@ -134365,26 +134371,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 806006984}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2131651168
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2131651166}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bdb0749cc1644834e9ee819b9828b2f1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  patrolPoints:
-  - {fileID: 1892649702}
-  - {fileID: 1159500071}
-  - {fileID: 1922641137}
-  - {fileID: 1523228819}
-  targetPoint: 0
-  speed: 5
-  safeArea: {fileID: 435990021}
 --- !u!212 &2131651169
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -134476,6 +134462,32 @@ CircleCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_Radius: 0.5
+--- !u!114 &2131651171
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2131651166}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de98a1ec5010bda4da334e7916f2e490, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  patrolPoints:
+  - {fileID: 1892649702}
+  - {fileID: 1159500071}
+  - {fileID: 1922641137}
+  - {fileID: 1523228819}
+  targetPoint: 0
+  speed: 5
+  safeArea: {fileID: 435990021}
+  projectilePrefab: {fileID: 724255035314166343, guid: 85f04e52c2eb6504b99a22d36c73ba94, type: 3}
+  projectileSpeed: 3
+  projectileSize: 1
+  fireRate: 2
+  spawnRadius: 1
+  projectileLifetime: 5
 --- !u!1 &2132437820
 GameObject:
   m_ObjectHideFlags: 0
