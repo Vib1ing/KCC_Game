@@ -208,7 +208,7 @@ MonoBehaviour:
   - {fileID: 1077071169}
   targetPoint: 0
   speed: 7
-  safeArea: {fileID: 2008328323}
+  safeArea: {fileID: 741803207}
 --- !u!212 &2772575
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -687,7 +687,7 @@ MonoBehaviour:
   - {fileID: 1974325140}
   targetPoint: 0
   speed: 9
-  safeArea: {fileID: 2008328323}
+  safeArea: {fileID: 2014724417}
 --- !u!212 &11553176
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2665,7 +2665,7 @@ MonoBehaviour:
   - {fileID: 205234409}
   targetPoint: 0
   speed: 10
-  safeArea: {fileID: 2008328323}
+  safeArea: {fileID: 1203719343}
 --- !u!212 &43384688
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3575,7 +3575,7 @@ MonoBehaviour:
   - {fileID: 1884130762}
   targetPoint: 0
   speed: 5
-  safeArea: {fileID: 2008328323}
+  safeArea: {fileID: 1163790528}
 --- !u!212 &62531388
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -7589,7 +7589,7 @@ MonoBehaviour:
   - {fileID: 1286376196}
   targetPoint: 0
   speed: 5
-  safeArea: {fileID: 2008328323}
+  safeArea: {fileID: 1584179314}
 --- !u!212 &124600238
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -7734,7 +7734,7 @@ MonoBehaviour:
   - {fileID: 847821736}
   targetPoint: 0
   speed: 10
-  safeArea: {fileID: 2008328323}
+  safeArea: {fileID: 1203719343}
 --- !u!212 &125905109
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -8046,7 +8046,7 @@ MonoBehaviour:
   - {fileID: 1095223717}
   targetPoint: 0
   speed: 6
-  safeArea: {fileID: 2008328323}
+  safeArea: {fileID: 494154590}
 --- !u!212 &128307647
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -8779,7 +8779,7 @@ MonoBehaviour:
   - {fileID: 1286376196}
   targetPoint: 0
   speed: 5
-  safeArea: {fileID: 2008328323}
+  safeArea: {fileID: 1584179314}
 --- !u!212 &138539810
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -9730,7 +9730,7 @@ MonoBehaviour:
   - {fileID: 618599775}
   targetPoint: 0
   speed: 8
-  safeArea: {fileID: 2008328323}
+  safeArea: {fileID: 2087841737}
 --- !u!212 &154886308
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -11439,7 +11439,7 @@ MonoBehaviour:
   - {fileID: 1095223717}
   targetPoint: 0
   speed: 6
-  safeArea: {fileID: 2008328323}
+  safeArea: {fileID: 494154590}
 --- !u!212 &190240726
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -12896,7 +12896,7 @@ MonoBehaviour:
   - {fileID: 2079414419}
   targetPoint: 0
   speed: 5
-  safeArea: {fileID: 2008328323}
+  safeArea: {fileID: 1584471587}
 --- !u!212 &217166837
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -13542,7 +13542,7 @@ MonoBehaviour:
   - {fileID: 1985335049}
   targetPoint: 0
   speed: 8
-  safeArea: {fileID: 2008328323}
+  safeArea: {fileID: 2087841737}
 --- !u!212 &233265437
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -13849,7 +13849,7 @@ MonoBehaviour:
   - {fileID: 1077071169}
   targetPoint: 0
   speed: 7
-  safeArea: {fileID: 2008328323}
+  safeArea: {fileID: 741803207}
 --- !u!212 &238727347
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -15216,8 +15216,8 @@ GameObject:
   m_Component:
   - component: {fileID: 257784301}
   - component: {fileID: 257784304}
-  - component: {fileID: 257784303}
   - component: {fileID: 257784302}
+  - component: {fileID: 257784305}
   m_Layer: 0
   m_Name: Enemy (1)
   m_TagString: Untagged
@@ -15276,26 +15276,6 @@ CircleCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_Radius: 0.5
---- !u!114 &257784303
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 257784300}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bdb0749cc1644834e9ee819b9828b2f1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  patrolPoints:
-  - {fileID: 353775817}
-  - {fileID: 2079414419}
-  - {fileID: 179601701}
-  - {fileID: 2074476200}
-  targetPoint: 0
-  speed: 5
-  safeArea: {fileID: 2008328323}
 --- !u!212 &257784304
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -15351,6 +15331,32 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &257784305
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 257784300}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de98a1ec5010bda4da334e7916f2e490, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  patrolPoints:
+  - {fileID: 353775817}
+  - {fileID: 2079414419}
+  - {fileID: 179601701}
+  - {fileID: 2074476200}
+  targetPoint: 0
+  speed: 5
+  safeArea: {fileID: 1584471587}
+  projectilePrefab: {fileID: 0}
+  projectileSpeed: 5
+  projectileSize: 1
+  fireRate: 2
+  spawnRadius: 1
+  projectileLifetime: 10
 --- !u!1 &263725055
 GameObject:
   m_ObjectHideFlags: 0
@@ -18776,7 +18782,7 @@ MonoBehaviour:
   - {fileID: 1286376196}
   targetPoint: 0
   speed: 5
-  safeArea: {fileID: 2008328323}
+  safeArea: {fileID: 1584179314}
 --- !u!212 &305994878
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -20904,7 +20910,7 @@ MonoBehaviour:
   - {fileID: 834024487}
   targetPoint: 0
   speed: 5
-  safeArea: {fileID: 2008328323}
+  safeArea: {fileID: 312426092}
 --- !u!212 &338346767
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -24953,7 +24959,7 @@ MonoBehaviour:
   - {fileID: 246825318}
   targetPoint: 0
   speed: 5
-  safeArea: {fileID: 2008328323}
+  safeArea: {fileID: 1448032145}
 --- !u!212 &418459578
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -26923,7 +26929,7 @@ MonoBehaviour:
   - {fileID: 312431876}
   targetPoint: 0
   speed: 5
-  safeArea: {fileID: 2008328323}
+  safeArea: {fileID: 469073388}
 --- !u!212 &451332630
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -27707,7 +27713,7 @@ MonoBehaviour:
   - {fileID: 2024818016}
   targetPoint: 0
   speed: 5
-  safeArea: {fileID: 2008328323}
+  safeArea: {fileID: 1517105753}
 --- !u!212 &457481805
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -27939,7 +27945,7 @@ MonoBehaviour:
   - {fileID: 766062530}
   targetPoint: 0
   speed: 9
-  safeArea: {fileID: 2008328323}
+  safeArea: {fileID: 2014724417}
 --- !u!212 &461033290
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -28084,7 +28090,7 @@ MonoBehaviour:
   - {fileID: 958982076}
   targetPoint: 0
   speed: 10
-  safeArea: {fileID: 2008328323}
+  safeArea: {fileID: 1203719343}
 --- !u!212 &461543561
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -28544,7 +28550,7 @@ MonoBehaviour:
   - {fileID: 271719945}
   targetPoint: 0
   speed: 9
-  safeArea: {fileID: 2008328323}
+  safeArea: {fileID: 2014724417}
 --- !u!212 &465064067
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -30197,7 +30203,7 @@ MonoBehaviour:
   - {fileID: 2024818016}
   targetPoint: 0
   speed: 5
-  safeArea: {fileID: 2008328323}
+  safeArea: {fileID: 1517105753}
 --- !u!212 &509229775
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -30652,7 +30658,7 @@ MonoBehaviour:
   - {fileID: 2079414419}
   targetPoint: 0
   speed: 5
-  safeArea: {fileID: 2008328323}
+  safeArea: {fileID: 1584471587}
 --- !u!212 &516243482
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -31029,7 +31035,7 @@ Transform:
   m_GameObject: {fileID: 519420028}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 540, y: 0, z: -11}
+  m_LocalPosition: {x: 1350, y: 0, z: -11}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -32240,7 +32246,7 @@ MonoBehaviour:
   - {fileID: 1397880237}
   targetPoint: 0
   speed: 5
-  safeArea: {fileID: 2008328323}
+  safeArea: {fileID: 469073388}
 --- !u!212 &535506988
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -35400,7 +35406,7 @@ MonoBehaviour:
   - {fileID: 1396710914}
   targetPoint: 0
   speed: 5
-  safeArea: {fileID: 2008328323}
+  safeArea: {fileID: 1584179314}
 --- !u!212 &581364839
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -36046,7 +36052,7 @@ MonoBehaviour:
   - {fileID: 576186123}
   targetPoint: 0
   speed: 7
-  safeArea: {fileID: 2008328323}
+  safeArea: {fileID: 741803207}
 --- !u!212 &584412230
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -39929,7 +39935,7 @@ MonoBehaviour:
   - {fileID: 312431876}
   targetPoint: 0
   speed: 5
-  safeArea: {fileID: 2008328323}
+  safeArea: {fileID: 469073388}
 --- !u!212 &624980589
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -43270,7 +43276,7 @@ MonoBehaviour:
   - {fileID: 2142989775}
   targetPoint: 0
   speed: 8
-  safeArea: {fileID: 2008328323}
+  safeArea: {fileID: 2087841737}
 --- !u!212 &668422521
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -44136,7 +44142,7 @@ MonoBehaviour:
   - {fileID: 1077071169}
   targetPoint: 0
   speed: 7
-  safeArea: {fileID: 2008328323}
+  safeArea: {fileID: 741803207}
 --- !u!212 &689238358
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -44944,7 +44950,7 @@ MonoBehaviour:
   - {fileID: 1884130762}
   targetPoint: 0
   speed: 5
-  safeArea: {fileID: 2008328323}
+  safeArea: {fileID: 469073388}
 --- !u!212 &699109977
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -47185,7 +47191,7 @@ MonoBehaviour:
   - {fileID: 1085831424}
   targetPoint: 0
   speed: 5
-  safeArea: {fileID: 2008328323}
+  safeArea: {fileID: 312426092}
 --- !u!212 &754148264
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -48415,7 +48421,7 @@ MonoBehaviour:
   - {fileID: 312431876}
   targetPoint: 0
   speed: 5
-  safeArea: {fileID: 2008328323}
+  safeArea: {fileID: 1163790528}
 --- !u!212 &792657447
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -48560,7 +48566,7 @@ MonoBehaviour:
   - {fileID: 1876053042}
   targetPoint: 0
   speed: 5
-  safeArea: {fileID: 2008328323}
+  safeArea: {fileID: 312426092}
 --- !u!212 &797940014
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -50982,7 +50988,7 @@ MonoBehaviour:
   - {fileID: 271719945}
   targetPoint: 0
   speed: 9
-  safeArea: {fileID: 2008328323}
+  safeArea: {fileID: 2014724417}
 --- !u!212 &817387881
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -52282,7 +52288,7 @@ MonoBehaviour:
   - {fileID: 312431876}
   targetPoint: 0
   speed: 5
-  safeArea: {fileID: 2008328323}
+  safeArea: {fileID: 1163790528}
 --- !u!212 &839488055
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -56395,7 +56401,7 @@ MonoBehaviour:
   - {fileID: 312431876}
   targetPoint: 0
   speed: 5
-  safeArea: {fileID: 2008328323}
+  safeArea: {fileID: 469073388}
 --- !u!212 &910651846
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -57041,7 +57047,7 @@ MonoBehaviour:
   - {fileID: 2024818016}
   targetPoint: 0
   speed: 5
-  safeArea: {fileID: 2008328323}
+  safeArea: {fileID: 1517105753}
 --- !u!212 &919805016
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -58706,7 +58712,7 @@ MonoBehaviour:
   - {fileID: 2079414419}
   targetPoint: 0
   speed: 5
-  safeArea: {fileID: 2008328323}
+  safeArea: {fileID: 1584471587}
 --- !u!212 &947951501
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -59406,7 +59412,7 @@ MonoBehaviour:
   - {fileID: 459055213}
   targetPoint: 0
   speed: 5
-  safeArea: {fileID: 2008328323}
+  safeArea: {fileID: 1517105753}
 --- !u!212 &956100447
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -60722,7 +60728,7 @@ MonoBehaviour:
   - {fileID: 2074476200}
   targetPoint: 0
   speed: 5
-  safeArea: {fileID: 2008328323}
+  safeArea: {fileID: 1584471587}
 --- !u!212 &980530042
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -63026,7 +63032,7 @@ MonoBehaviour:
   - {fileID: 312431876}
   targetPoint: 0
   speed: 5
-  safeArea: {fileID: 2008328323}
+  safeArea: {fileID: 1163790528}
 --- !u!212 &1040219067
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -64617,7 +64623,7 @@ MonoBehaviour:
   - {fileID: 1095223717}
   targetPoint: 0
   speed: 6
-  safeArea: {fileID: 2008328323}
+  safeArea: {fileID: 494154590}
 --- !u!212 &1067204860
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -65929,7 +65935,7 @@ Transform:
   m_GameObject: {fileID: 1082840259}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 540, y: 0, z: -11}
+  m_LocalPosition: {x: 1350, y: 0, z: -11}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -66029,7 +66035,7 @@ MonoBehaviour:
   - {fileID: 1397880237}
   targetPoint: 0
   speed: 5
-  safeArea: {fileID: 2008328323}
+  safeArea: {fileID: 1163790528}
 --- !u!212 &1083154118
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -67280,7 +67286,7 @@ MonoBehaviour:
   - {fileID: 179601701}
   targetPoint: 0
   speed: 5
-  safeArea: {fileID: 2008328323}
+  safeArea: {fileID: 1584471587}
 --- !u!212 &1100133391
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -67949,7 +67955,7 @@ MonoBehaviour:
   - {fileID: 1807210978}
   targetPoint: 0
   speed: 5
-  safeArea: {fileID: 2008328323}
+  safeArea: {fileID: 1448032145}
 --- !u!212 &1117536899
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -68816,7 +68822,7 @@ MonoBehaviour:
   - {fileID: 674106915}
   targetPoint: 0
   speed: 5
-  safeArea: {fileID: 2008328323}
+  safeArea: {fileID: 1517105753}
 --- !u!212 &1142766673
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -69791,7 +69797,7 @@ MonoBehaviour:
   - {fileID: 80061040}
   targetPoint: 0
   speed: 6
-  safeArea: {fileID: 2008328323}
+  safeArea: {fileID: 494154590}
 --- !u!212 &1158604127
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -72270,7 +72276,7 @@ MonoBehaviour:
   - {fileID: 1807210978}
   targetPoint: 0
   speed: 5
-  safeArea: {fileID: 2008328323}
+  safeArea: {fileID: 1448032145}
 --- !u!212 &1188035800
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -72730,7 +72736,7 @@ MonoBehaviour:
   - {fileID: 1085831424}
   targetPoint: 0
   speed: 5
-  safeArea: {fileID: 2008328323}
+  safeArea: {fileID: 312426092}
 --- !u!212 &1195335281
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -74753,7 +74759,7 @@ MonoBehaviour:
   - {fileID: 834024487}
   targetPoint: 0
   speed: 5
-  safeArea: {fileID: 2008328323}
+  safeArea: {fileID: 312426092}
 --- !u!212 &1231830987
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -77051,7 +77057,7 @@ MonoBehaviour:
   - {fileID: 1435353452}
   targetPoint: 0
   speed: 10
-  safeArea: {fileID: 2008328323}
+  safeArea: {fileID: 1203719343}
 --- !u!212 &1261603074
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -77450,7 +77456,7 @@ MonoBehaviour:
   - {fileID: 1649012664}
   targetPoint: 0
   speed: 9
-  safeArea: {fileID: 2008328323}
+  safeArea: {fileID: 2014724417}
 --- !u!212 &1265374903
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -78193,7 +78199,7 @@ MonoBehaviour:
   - {fileID: 517237786}
   targetPoint: 0
   speed: 5
-  safeArea: {fileID: 2008328323}
+  safeArea: {fileID: 1584179314}
 --- !u!212 &1280069817
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -80014,23 +80020,17 @@ MonoBehaviour:
   m_GameObject: {fileID: 1328931966}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: de98a1ec5010bda4da334e7916f2e490, type: 3}
+  m_Script: {fileID: 11500000, guid: bdb0749cc1644834e9ee819b9828b2f1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   patrolPoints:
   - {fileID: 1922641137}
   - {fileID: 1523228819}
-  - {fileID: 1892649702}
   - {fileID: 1159500071}
+  - {fileID: 1892649702}
   targetPoint: 0
   speed: 5
   safeArea: {fileID: 435990021}
-  projectilePrefab: {fileID: 724255035314166343, guid: 85f04e52c2eb6504b99a22d36c73ba94, type: 3}
-  projectileSpeed: 10
-  projectileSize: 4
-  fireRate: 5
-  spawnRadius: 1
-  projectileLifetime: 10
 --- !u!1 &1329893291
 GameObject:
   m_ObjectHideFlags: 0
@@ -81284,7 +81284,7 @@ MonoBehaviour:
   - {fileID: 1397880237}
   targetPoint: 0
   speed: 5
-  safeArea: {fileID: 2008328323}
+  safeArea: {fileID: 469073388}
 --- !u!212 &1342993842
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -82404,7 +82404,7 @@ MonoBehaviour:
   - {fileID: 834024487}
   targetPoint: 0
   speed: 5
-  safeArea: {fileID: 2008328323}
+  safeArea: {fileID: 312426092}
 --- !u!212 &1362956755
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -84276,7 +84276,7 @@ MonoBehaviour:
   - {fileID: 1985335049}
   targetPoint: 0
   speed: 8
-  safeArea: {fileID: 2008328323}
+  safeArea: {fileID: 2087841737}
 --- !u!212 &1385627023
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -85096,7 +85096,7 @@ MonoBehaviour:
   - {fileID: 388935296}
   targetPoint: 0
   speed: 5
-  safeArea: {fileID: 2008328323}
+  safeArea: {fileID: 1448032145}
 --- !u!212 &1400981769
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -86544,7 +86544,7 @@ MonoBehaviour:
   - {fileID: 759868891}
   targetPoint: 0
   speed: 8
-  safeArea: {fileID: 2008328323}
+  safeArea: {fileID: 2087841737}
 --- !u!212 &1427300672
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -88319,7 +88319,7 @@ MonoBehaviour:
   - {fileID: 1435353452}
   targetPoint: 0
   speed: 10
-  safeArea: {fileID: 2008328323}
+  safeArea: {fileID: 1203719343}
 --- !u!212 &1443061636
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -89209,7 +89209,7 @@ MonoBehaviour:
   - {fileID: 80061040}
   targetPoint: 0
   speed: 6
-  safeArea: {fileID: 2008328323}
+  safeArea: {fileID: 494154590}
 --- !u!212 &1452332668
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -89521,7 +89521,7 @@ MonoBehaviour:
   - {fileID: 1397880237}
   targetPoint: 0
   speed: 5
-  safeArea: {fileID: 2008328323}
+  safeArea: {fileID: 469073388}
 --- !u!212 &1462224792
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -90249,7 +90249,7 @@ MonoBehaviour:
   - {fileID: 80061040}
   targetPoint: 0
   speed: 6
-  safeArea: {fileID: 2008328323}
+  safeArea: {fileID: 494154590}
 --- !u!212 &1471715000
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -90394,7 +90394,7 @@ MonoBehaviour:
   - {fileID: 1262025513}
   targetPoint: 0
   speed: 5
-  safeArea: {fileID: 2008328323}
+  safeArea: {fileID: 469073388}
 --- !u!212 &1473059481
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -91352,7 +91352,7 @@ MonoBehaviour:
   - {fileID: 388935296}
   targetPoint: 0
   speed: 5
-  safeArea: {fileID: 2008328323}
+  safeArea: {fileID: 1448032145}
 --- !u!212 &1484299999
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -94382,7 +94382,7 @@ MonoBehaviour:
   - {fileID: 604824739}
   targetPoint: 0
   speed: 5
-  safeArea: {fileID: 2008328323}
+  safeArea: {fileID: 1448032145}
 --- !u!212 &1528555911
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -95343,7 +95343,7 @@ MonoBehaviour:
   - {fileID: 517237786}
   targetPoint: 0
   speed: 5
-  safeArea: {fileID: 2008328323}
+  safeArea: {fileID: 1584179314}
 --- !u!212 &1543689533
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -96859,7 +96859,7 @@ MonoBehaviour:
   - {fileID: 416774633}
   targetPoint: 0
   speed: 6
-  safeArea: {fileID: 2008328323}
+  safeArea: {fileID: 494154590}
 --- !u!212 &1568456635
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -97004,7 +97004,7 @@ MonoBehaviour:
   - {fileID: 312431876}
   targetPoint: 0
   speed: 5
-  safeArea: {fileID: 2008328323}
+  safeArea: {fileID: 469073388}
 --- !u!212 &1573443344
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -99695,7 +99695,7 @@ MonoBehaviour:
   - {fileID: 272755239}
   targetPoint: 0
   speed: 7
-  safeArea: {fileID: 2008328323}
+  safeArea: {fileID: 741803207}
 --- !u!212 &1620426198
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -100341,7 +100341,7 @@ MonoBehaviour:
   - {fileID: 674106915}
   targetPoint: 0
   speed: 5
-  safeArea: {fileID: 2008328323}
+  safeArea: {fileID: 1517105753}
 --- !u!212 &1627105660
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -100653,7 +100653,7 @@ MonoBehaviour:
   - {fileID: 799987448}
   targetPoint: 0
   speed: 5
-  safeArea: {fileID: 2008328323}
+  safeArea: {fileID: 1517105753}
 --- !u!212 &1631356137
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -101864,7 +101864,7 @@ MonoBehaviour:
   - {fileID: 1807210978}
   targetPoint: 0
   speed: 5
-  safeArea: {fileID: 2008328323}
+  safeArea: {fileID: 1448032145}
 --- !u!212 &1642651744
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -105813,7 +105813,7 @@ MonoBehaviour:
   - {fileID: 312431876}
   targetPoint: 0
   speed: 5
-  safeArea: {fileID: 2008328323}
+  safeArea: {fileID: 469073388}
 --- !u!212 &1689614815
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -106546,7 +106546,7 @@ MonoBehaviour:
   - {fileID: 1985335049}
   targetPoint: 0
   speed: 8
-  safeArea: {fileID: 2008328323}
+  safeArea: {fileID: 2087841737}
 --- !u!212 &1703825334
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -109468,7 +109468,7 @@ MonoBehaviour:
   - {fileID: 847821736}
   targetPoint: 0
   speed: 10
-  safeArea: {fileID: 2008328323}
+  safeArea: {fileID: 1203719343}
 --- !u!212 &1761839589
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -109928,7 +109928,7 @@ MonoBehaviour:
   - {fileID: 271719945}
   targetPoint: 0
   speed: 9
-  safeArea: {fileID: 2008328323}
+  safeArea: {fileID: 2014724417}
 --- !u!212 &1767558313
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -111315,7 +111315,7 @@ MonoBehaviour:
   - {fileID: 312431876}
   targetPoint: 0
   speed: 5
-  safeArea: {fileID: 2008328323}
+  safeArea: {fileID: 1163790528}
 --- !u!212 &1788784059
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -111782,7 +111782,7 @@ MonoBehaviour:
   - {fileID: 1397880237}
   targetPoint: 0
   speed: 5
-  safeArea: {fileID: 2008328323}
+  safeArea: {fileID: 1163790528}
 --- !u!212 &1804136620
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -115865,7 +115865,7 @@ MonoBehaviour:
   - {fileID: 2074476200}
   targetPoint: 0
   speed: 5
-  safeArea: {fileID: 2008328323}
+  safeArea: {fileID: 1584471587}
 --- !u!212 &1855421155
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -116654,7 +116654,7 @@ MonoBehaviour:
   - {fileID: 353775817}
   targetPoint: 0
   speed: 5
-  safeArea: {fileID: 2008328323}
+  safeArea: {fileID: 1584471587}
 --- !u!212 &1870766272
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -117133,7 +117133,7 @@ MonoBehaviour:
   - {fileID: 254407800}
   targetPoint: 0
   speed: 5
-  safeArea: {fileID: 2008328323}
+  safeArea: {fileID: 312426092}
 --- !u!212 &1875198701
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -117365,7 +117365,7 @@ MonoBehaviour:
   - {fileID: 576186123}
   targetPoint: 0
   speed: 7
-  safeArea: {fileID: 2008328323}
+  safeArea: {fileID: 741803207}
 --- !u!212 &1877157701
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -117731,7 +117731,7 @@ MonoBehaviour:
   - {fileID: 1085831424}
   targetPoint: 0
   speed: 5
-  safeArea: {fileID: 2008328323}
+  safeArea: {fileID: 312426092}
 --- !u!212 &1885793137
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -118379,7 +118379,7 @@ MonoBehaviour:
   - {fileID: 184191661}
   targetPoint: 0
   speed: 5
-  safeArea: {fileID: 2008328323}
+  safeArea: {fileID: 1584179314}
 --- !u!212 &1900371492
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -119275,7 +119275,7 @@ MonoBehaviour:
   - {fileID: 1397880237}
   targetPoint: 0
   speed: 5
-  safeArea: {fileID: 2008328323}
+  safeArea: {fileID: 469073388}
 --- !u!212 &1909600513
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -120374,7 +120374,7 @@ MonoBehaviour:
   - {fileID: 847821736}
   targetPoint: 0
   speed: 10
-  safeArea: {fileID: 2008328323}
+  safeArea: {fileID: 1203719343}
 --- !u!212 &1924721642
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -120519,7 +120519,7 @@ MonoBehaviour:
   - {fileID: 517237786}
   targetPoint: 0
   speed: 5
-  safeArea: {fileID: 2008328323}
+  safeArea: {fileID: 1584179314}
 --- !u!212 &1927675896
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -120704,7 +120704,7 @@ Transform:
   m_GameObject: {fileID: 1933028595}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 540, y: 0, z: -1}
+  m_LocalPosition: {x: 1350, y: 0, z: -1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -123479,7 +123479,7 @@ MonoBehaviour:
   - {fileID: 2142989775}
   targetPoint: 0
   speed: 8
-  safeArea: {fileID: 2008328323}
+  safeArea: {fileID: 2087841737}
 --- !u!212 &1975189766
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -123711,7 +123711,7 @@ MonoBehaviour:
   - {fileID: 1397880237}
   targetPoint: 0
   speed: 5
-  safeArea: {fileID: 2008328323}
+  safeArea: {fileID: 1163790528}
 --- !u!212 &1978724500
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -123856,7 +123856,7 @@ MonoBehaviour:
   - {fileID: 576186123}
   targetPoint: 0
   speed: 7
-  safeArea: {fileID: 2008328323}
+  safeArea: {fileID: 741803207}
 --- !u!212 &1980082228
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -127529,7 +127529,7 @@ MonoBehaviour:
   - {fileID: 674106915}
   targetPoint: 0
   speed: 5
-  safeArea: {fileID: 2008328323}
+  safeArea: {fileID: 1517105753}
 --- !u!212 &2031152611
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -128611,7 +128611,7 @@ MonoBehaviour:
   - {fileID: 388935296}
   targetPoint: 0
   speed: 5
-  safeArea: {fileID: 2008328323}
+  safeArea: {fileID: 1448032145}
 --- !u!212 &2060330885
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -130700,7 +130700,7 @@ MonoBehaviour:
   - {fileID: 1262025513}
   targetPoint: 0
   speed: 5
-  safeArea: {fileID: 2008328323}
+  safeArea: {fileID: 1163790528}
 --- !u!212 &2096421917
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -131494,7 +131494,7 @@ MonoBehaviour:
   - {fileID: 1397880237}
   targetPoint: 0
   speed: 5
-  safeArea: {fileID: 2008328323}
+  safeArea: {fileID: 1163790528}
 --- !u!212 &2104463135
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -131639,7 +131639,7 @@ MonoBehaviour:
   - {fileID: 1435353452}
   targetPoint: 0
   speed: 10
-  safeArea: {fileID: 2008328323}
+  safeArea: {fileID: 1203719343}
 --- !u!212 &2104558209
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -131929,7 +131929,7 @@ MonoBehaviour:
   - {fileID: 1649012664}
   targetPoint: 0
   speed: 9
-  safeArea: {fileID: 2008328323}
+  safeArea: {fileID: 2014724417}
 --- !u!212 &2104867190
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -132916,7 +132916,7 @@ MonoBehaviour:
   - {fileID: 579422380}
   targetPoint: 0
   speed: 6
-  safeArea: {fileID: 2008328323}
+  safeArea: {fileID: 494154590}
 --- !u!212 &2118620621
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -134281,7 +134281,7 @@ MonoBehaviour:
   - {fileID: 1649012664}
   targetPoint: 0
   speed: 9
-  safeArea: {fileID: 2008328323}
+  safeArea: {fileID: 2014724417}
 --- !u!212 &2131469298
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -134471,7 +134471,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 2131651166}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: de98a1ec5010bda4da334e7916f2e490, type: 3}
+  m_Script: {fileID: 11500000, guid: bdb0749cc1644834e9ee819b9828b2f1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   patrolPoints:
@@ -134482,12 +134482,6 @@ MonoBehaviour:
   targetPoint: 0
   speed: 5
   safeArea: {fileID: 435990021}
-  projectilePrefab: {fileID: 724255035314166343, guid: 85f04e52c2eb6504b99a22d36c73ba94, type: 3}
-  projectileSpeed: 3
-  projectileSize: 1
-  fireRate: 2
-  spawnRadius: 1
-  projectileLifetime: 5
 --- !u!1 &2132437820
 GameObject:
   m_ObjectHideFlags: 0
@@ -134577,7 +134571,7 @@ MonoBehaviour:
   - {fileID: 2112322260}
   targetPoint: 0
   speed: 7
-  safeArea: {fileID: 2008328323}
+  safeArea: {fileID: 741803207}
 --- !u!212 &2132437824
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -135056,7 +135050,7 @@ MonoBehaviour:
   - {fileID: 2142989775}
   targetPoint: 0
   speed: 8
-  safeArea: {fileID: 2008328323}
+  safeArea: {fileID: 2087841737}
 --- !u!212 &2139641294
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -135709,7 +135703,7 @@ MonoBehaviour:
   - {fileID: 312431876}
   targetPoint: 0
   speed: 5
-  safeArea: {fileID: 2008328323}
+  safeArea: {fileID: 469073388}
 --- !u!212 &2145297146
 SpriteRenderer:
   m_ObjectHideFlags: 0
