@@ -1989,7 +1989,7 @@ MonoBehaviour:
   projectileSize: 3
   fireRate: 2
   spawnRadius: 1
-  projectileLifetime: 8
+  projectileLifetime: 5
 --- !u!58 &34334485
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -6285,7 +6285,7 @@ MonoBehaviour:
   projectileSize: 2
   fireRate: 2
   spawnRadius: 1
-  projectileLifetime: 8
+  projectileLifetime: 5
 --- !u!58 &102403430
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -7940,7 +7940,7 @@ MonoBehaviour:
   projectileSize: 2
   fireRate: 2
   spawnRadius: 1
-  projectileLifetime: 8
+  projectileLifetime: 5
 --- !u!1 &127301506
 GameObject:
   m_ObjectHideFlags: 0
@@ -8755,7 +8755,7 @@ MonoBehaviour:
   projectileSize: 2
   fireRate: 2
   spawnRadius: 1
-  projectileLifetime: 8
+  projectileLifetime: 5
 --- !u!58 &135805185
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -8997,7 +8997,7 @@ MonoBehaviour:
   projectileSize: 1
   fireRate: 2
   spawnRadius: 1
-  projectileLifetime: 8
+  projectileLifetime: 5
 --- !u!1 &146839116
 GameObject:
   m_ObjectHideFlags: 0
@@ -15229,7 +15229,7 @@ MonoBehaviour:
   projectileSize: 1
   fireRate: 2
   spawnRadius: 1
-  projectileLifetime: 8
+  projectileLifetime: 5
 --- !u!1 &263725055
 GameObject:
   m_ObjectHideFlags: 0
@@ -20844,7 +20844,7 @@ MonoBehaviour:
   projectileSize: 2
   fireRate: 2
   spawnRadius: 1
-  projectileLifetime: 8
+  projectileLifetime: 5
 --- !u!1 &340196726
 GameObject:
   m_ObjectHideFlags: 0
@@ -26156,7 +26156,7 @@ MonoBehaviour:
   projectileSize: 1.5
   fireRate: 2
   spawnRadius: 1
-  projectileLifetime: 8
+  projectileLifetime: 5
 --- !u!58 &436180381
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -30336,7 +30336,7 @@ MonoBehaviour:
   projectileSize: 1
   fireRate: 2
   spawnRadius: 1
-  projectileLifetime: 8
+  projectileLifetime: 5
 --- !u!58 &500295084
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -44694,7 +44694,7 @@ MonoBehaviour:
   projectileSize: 1.5
   fireRate: 2
   spawnRadius: 1
-  projectileLifetime: 8
+  projectileLifetime: 5
 --- !u!58 &689851124
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -45319,7 +45319,7 @@ MonoBehaviour:
   projectileSize: 1
   fireRate: 2
   spawnRadius: 1
-  projectileLifetime: 8
+  projectileLifetime: 5
 --- !u!58 &700246309
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -46695,7 +46695,7 @@ MonoBehaviour:
   projectileSize: 2.5
   fireRate: 2
   spawnRadius: 1
-  projectileLifetime: 8
+  projectileLifetime: 5
 --- !u!58 &740523065
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -56706,7 +56706,7 @@ MonoBehaviour:
   projectileSize: 1
   fireRate: 2
   spawnRadius: 1
-  projectileLifetime: 8
+  projectileLifetime: 5
 --- !u!58 &905898412
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -57670,7 +57670,7 @@ MonoBehaviour:
   projectileSize: 1
   fireRate: 2
   spawnRadius: 1
-  projectileLifetime: 8
+  projectileLifetime: 5
 --- !u!1 &921386165
 GameObject:
   m_ObjectHideFlags: 0
@@ -60603,7 +60603,7 @@ MonoBehaviour:
   projectileSize: 2.5
   fireRate: 2
   spawnRadius: 1
-  projectileLifetime: 8
+  projectileLifetime: 5
 --- !u!58 &969134043
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -61562,7 +61562,7 @@ MonoBehaviour:
   projectileSize: 3
   fireRate: 2
   spawnRadius: 1
-  projectileLifetime: 8
+  projectileLifetime: 5
 --- !u!58 &986398762
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -68924,7 +68924,7 @@ MonoBehaviour:
   projectileSize: 2
   fireRate: 2
   spawnRadius: 1
-  projectileLifetime: 8
+  projectileLifetime: 5
 --- !u!1 &1120875235
 GameObject:
   m_ObjectHideFlags: 0
@@ -69797,7 +69797,7 @@ MonoBehaviour:
   projectileSize: 1.5
   fireRate: 2
   spawnRadius: 1
-  projectileLifetime: 8
+  projectileLifetime: 5
 --- !u!1 &1143704840
 GameObject:
   m_ObjectHideFlags: 0
@@ -70358,7 +70358,7 @@ MonoBehaviour:
   projectileSize: 2
   fireRate: 2
   spawnRadius: 1
-  projectileLifetime: 8
+  projectileLifetime: 5
 --- !u!58 &1150404976
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -73263,7 +73263,7 @@ MonoBehaviour:
   projectileSize: 2.5
   fireRate: 2
   spawnRadius: 1
-  projectileLifetime: 8
+  projectileLifetime: 5
 --- !u!1 &1188080854
 GameObject:
   m_ObjectHideFlags: 0
@@ -73729,7 +73729,7 @@ MonoBehaviour:
   projectileSize: 1.5
   fireRate: 2
   spawnRadius: 1
-  projectileLifetime: 8
+  projectileLifetime: 5
 --- !u!1 &1199500516
 GameObject:
   m_ObjectHideFlags: 0
@@ -75758,7 +75758,7 @@ MonoBehaviour:
   projectileSize: 1
   fireRate: 2
   spawnRadius: 1
-  projectileLifetime: 8
+  projectileLifetime: 5
 --- !u!1 &1233338390
 GameObject:
   m_ObjectHideFlags: 0
@@ -78823,7 +78823,7 @@ MonoBehaviour:
   projectileSize: 2.5
   fireRate: 2
   spawnRadius: 1
-  projectileLifetime: 8
+  projectileLifetime: 5
 --- !u!58 &1278896535
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -79119,7 +79119,7 @@ MonoBehaviour:
   projectileSize: 1.5
   fireRate: 2
   spawnRadius: 1
-  projectileLifetime: 8
+  projectileLifetime: 5
 --- !u!58 &1280156157
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -82689,7 +82689,7 @@ MonoBehaviour:
   projectileSize: 2
   fireRate: 2
   spawnRadius: 1
-  projectileLifetime: 8
+  projectileLifetime: 5
 --- !u!58 &1345330590
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -83674,7 +83674,7 @@ MonoBehaviour:
   projectileSize: 2.5
   fireRate: 2
   spawnRadius: 1
-  projectileLifetime: 8
+  projectileLifetime: 5
 --- !u!1 &1364865946
 GameObject:
   m_ObjectHideFlags: 0
@@ -86227,7 +86227,7 @@ MonoBehaviour:
   projectileSize: 1.5
   fireRate: 2
   spawnRadius: 1
-  projectileLifetime: 8
+  projectileLifetime: 5
 --- !u!1 &1401906337
 GameObject:
   m_ObjectHideFlags: 0
@@ -92199,7 +92199,7 @@ MonoBehaviour:
   projectileSize: 3
   fireRate: 2
   spawnRadius: 1
-  projectileLifetime: 8
+  projectileLifetime: 5
 --- !u!1 &1485665588
 GameObject:
   m_ObjectHideFlags: 0
@@ -96241,7 +96241,7 @@ MonoBehaviour:
   projectileSize: 3
   fireRate: 2
   spawnRadius: 1
-  projectileLifetime: 8
+  projectileLifetime: 5
 --- !u!58 &1536070832
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -96483,7 +96483,7 @@ MonoBehaviour:
   projectileSize: 1.5
   fireRate: 2
   spawnRadius: 1
-  projectileLifetime: 8
+  projectileLifetime: 5
 --- !u!1 &1545647162
 GameObject:
   m_ObjectHideFlags: 0
@@ -100588,7 +100588,7 @@ MonoBehaviour:
   projectileSize: 1
   fireRate: 2
   spawnRadius: 1
-  projectileLifetime: 8
+  projectileLifetime: 5
 --- !u!58 &1613763182
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -103294,7 +103294,7 @@ MonoBehaviour:
   projectileSize: 1
   fireRate: 2
   spawnRadius: 1
-  projectileLifetime: 8
+  projectileLifetime: 5
 --- !u!1 &1646507632
 GameObject:
   m_ObjectHideFlags: 0
@@ -104918,7 +104918,7 @@ MonoBehaviour:
   projectileSize: 2.5
   fireRate: 2
   spawnRadius: 1
-  projectileLifetime: 8
+  projectileLifetime: 5
 --- !u!58 &1663862748
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -107621,7 +107621,7 @@ MonoBehaviour:
   projectileSize: 2.5
   fireRate: 2
   spawnRadius: 1
-  projectileLifetime: 8
+  projectileLifetime: 5
 --- !u!58 &1702032971
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -108193,7 +108193,7 @@ MonoBehaviour:
   projectileSize: 1
   fireRate: 2
   spawnRadius: 1
-  projectileLifetime: 8
+  projectileLifetime: 5
 --- !u!58 &1706387385
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -108344,7 +108344,7 @@ MonoBehaviour:
   projectileSize: 1.5
   fireRate: 2
   spawnRadius: 1
-  projectileLifetime: 8
+  projectileLifetime: 5
 --- !u!58 &1708402262
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -110053,7 +110053,7 @@ MonoBehaviour:
   projectileSize: 3
   fireRate: 2
   spawnRadius: 1
-  projectileLifetime: 8
+  projectileLifetime: 5
 --- !u!58 &1738887948
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -110288,7 +110288,7 @@ MonoBehaviour:
   projectileSize: 1.5
   fireRate: 2
   spawnRadius: 1
-  projectileLifetime: 8
+  projectileLifetime: 5
 --- !u!58 &1748147109
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -115100,7 +115100,7 @@ MonoBehaviour:
   projectileSize: 2
   fireRate: 2
   spawnRadius: 1
-  projectileLifetime: 8
+  projectileLifetime: 5
 --- !u!58 &1821877685
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -130328,7 +130328,7 @@ MonoBehaviour:
   projectileSize: 3
   fireRate: 2
   spawnRadius: 1
-  projectileLifetime: 8
+  projectileLifetime: 5
 --- !u!58 &2052900771
 CircleCollider2D:
   m_ObjectHideFlags: 0
