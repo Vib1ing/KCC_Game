@@ -1986,10 +1986,10 @@ MonoBehaviour:
   safeArea: {fileID: 2087841737}
   projectilePrefab: {fileID: 724255035314166343, guid: 85f04e52c2eb6504b99a22d36c73ba94, type: 3}
   projectileSpeed: 8
-  projectileSize: 3
+  projectileSize: 2
   fireRate: 2
   spawnRadius: 1
-  projectileLifetime: 5
+  projectileLifetime: 3
 --- !u!58 &34334485
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -3708,10 +3708,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   patrolPoints:
-  - {fileID: 312431876}
-  - {fileID: 1262025513}
-  - {fileID: 1397880237}
-  - {fileID: 1884130762}
+  - {fileID: 1513210211}
+  - {fileID: 609943406}
+  - {fileID: 1408770871}
+  - {fileID: 2012359640}
   targetPoint: 0
   speed: 5
   safeArea: {fileID: 1163790528}
@@ -6282,10 +6282,10 @@ MonoBehaviour:
   safeArea: {fileID: 494154590}
   projectilePrefab: {fileID: 724255035314166343, guid: 85f04e52c2eb6504b99a22d36c73ba94, type: 3}
   projectileSpeed: 6
-  projectileSize: 2
+  projectileSize: 1.5
   fireRate: 2
   spawnRadius: 1
-  projectileLifetime: 5
+  projectileLifetime: 3
 --- !u!58 &102403430
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -7937,10 +7937,10 @@ MonoBehaviour:
   safeArea: {fileID: 1584179314}
   projectilePrefab: {fileID: 724255035314166343, guid: 85f04e52c2eb6504b99a22d36c73ba94, type: 3}
   projectileSpeed: 5
-  projectileSize: 2
+  projectileSize: 1.5
   fireRate: 2
   spawnRadius: 1
-  projectileLifetime: 5
+  projectileLifetime: 3
 --- !u!1 &127301506
 GameObject:
   m_ObjectHideFlags: 0
@@ -8752,10 +8752,10 @@ MonoBehaviour:
   safeArea: {fileID: 2014724417}
   projectilePrefab: {fileID: 724255035314166343, guid: 85f04e52c2eb6504b99a22d36c73ba94, type: 3}
   projectileSpeed: 9
-  projectileSize: 2
+  projectileSize: 1.5
   fireRate: 2
   spawnRadius: 1
-  projectileLifetime: 5
+  projectileLifetime: 3
 --- !u!58 &135805185
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -8997,7 +8997,7 @@ MonoBehaviour:
   projectileSize: 1
   fireRate: 2
   spawnRadius: 1
-  projectileLifetime: 5
+  projectileLifetime: 3
 --- !u!1 &146839116
 GameObject:
   m_ObjectHideFlags: 0
@@ -15229,7 +15229,7 @@ MonoBehaviour:
   projectileSize: 1
   fireRate: 2
   spawnRadius: 1
-  projectileLifetime: 5
+  projectileLifetime: 3
 --- !u!1 &263725055
 GameObject:
   m_ObjectHideFlags: 0
@@ -16386,7 +16386,7 @@ GameObject:
   - component: {fileID: 280977343}
   m_Layer: 6
   m_Name: SafeAreaRight18
-  m_TagString: Wall
+  m_TagString: SafeArea
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -20841,10 +20841,10 @@ MonoBehaviour:
   safeArea: {fileID: 312426092}
   projectilePrefab: {fileID: 724255035314166343, guid: 85f04e52c2eb6504b99a22d36c73ba94, type: 3}
   projectileSpeed: 5
-  projectileSize: 2
+  projectileSize: 1.5
   fireRate: 2
   spawnRadius: 1
-  projectileLifetime: 5
+  projectileLifetime: 3
 --- !u!1 &340196726
 GameObject:
   m_ObjectHideFlags: 0
@@ -26153,10 +26153,10 @@ MonoBehaviour:
   safeArea: {fileID: 741803207}
   projectilePrefab: {fileID: 724255035314166343, guid: 85f04e52c2eb6504b99a22d36c73ba94, type: 3}
   projectileSpeed: 7
-  projectileSize: 1.5
+  projectileSize: 1.25
   fireRate: 2
   spawnRadius: 1
-  projectileLifetime: 5
+  projectileLifetime: 3
 --- !u!58 &436180381
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -27086,10 +27086,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   patrolPoints:
-  - {fileID: 1262025513}
-  - {fileID: 1397880237}
-  - {fileID: 1884130762}
-  - {fileID: 312431876}
+  - {fileID: 611820477}
+  - {fileID: 1111327936}
+  - {fileID: 374570439}
+  - {fileID: 1702975373}
   targetPoint: 0
   speed: 5
   safeArea: {fileID: 469073388}
@@ -30336,7 +30336,7 @@ MonoBehaviour:
   projectileSize: 1
   fireRate: 2
   spawnRadius: 1
-  projectileLifetime: 5
+  projectileLifetime: 3
 --- !u!58 &500295084
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -32633,10 +32633,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   patrolPoints:
-  - {fileID: 1884130762}
-  - {fileID: 312431876}
-  - {fileID: 1262025513}
-  - {fileID: 1397880237}
+  - {fileID: 611820477}
+  - {fileID: 1111327936}
+  - {fileID: 374570439}
+  - {fileID: 1702975373}
   targetPoint: 0
   speed: 5
   safeArea: {fileID: 469073388}
@@ -40177,10 +40177,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   patrolPoints:
-  - {fileID: 1262025513}
-  - {fileID: 1397880237}
-  - {fileID: 1884130762}
-  - {fileID: 312431876}
+  - {fileID: 374570439}
+  - {fileID: 1702975373}
+  - {fileID: 611820477}
+  - {fileID: 1111327936}
   targetPoint: 0
   speed: 5
   safeArea: {fileID: 469073388}
@@ -44691,10 +44691,10 @@ MonoBehaviour:
   safeArea: {fileID: 494154590}
   projectilePrefab: {fileID: 724255035314166343, guid: 85f04e52c2eb6504b99a22d36c73ba94, type: 3}
   projectileSpeed: 6
-  projectileSize: 1.5
+  projectileSize: 1.25
   fireRate: 2
   spawnRadius: 1
-  projectileLifetime: 5
+  projectileLifetime: 3
 --- !u!58 &689851124
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -45319,7 +45319,7 @@ MonoBehaviour:
   projectileSize: 1
   fireRate: 2
   spawnRadius: 1
-  projectileLifetime: 5
+  projectileLifetime: 3
 --- !u!58 &700246309
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -46692,10 +46692,10 @@ MonoBehaviour:
   safeArea: {fileID: 2087841737}
   projectilePrefab: {fileID: 724255035314166343, guid: 85f04e52c2eb6504b99a22d36c73ba94, type: 3}
   projectileSpeed: 8
-  projectileSize: 2.5
+  projectileSize: 1.75
   fireRate: 2
   spawnRadius: 1
-  projectileLifetime: 5
+  projectileLifetime: 3
 --- !u!58 &740523065
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -48971,10 +48971,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   patrolPoints:
-  - {fileID: 1262025513}
-  - {fileID: 1397880237}
-  - {fileID: 1884130762}
-  - {fileID: 312431876}
+  - {fileID: 609943406}
+  - {fileID: 1408770871}
+  - {fileID: 2012359640}
+  - {fileID: 1513210211}
   targetPoint: 0
   speed: 5
   safeArea: {fileID: 1163790528}
@@ -52693,10 +52693,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   patrolPoints:
-  - {fileID: 1262025513}
-  - {fileID: 1397880237}
-  - {fileID: 1884130762}
-  - {fileID: 312431876}
+  - {fileID: 609943406}
+  - {fileID: 1408770871}
+  - {fileID: 2012359640}
+  - {fileID: 1513210211}
   targetPoint: 0
   speed: 5
   safeArea: {fileID: 1163790528}
@@ -56706,7 +56706,7 @@ MonoBehaviour:
   projectileSize: 1
   fireRate: 2
   spawnRadius: 1
-  projectileLifetime: 5
+  projectileLifetime: 3
 --- !u!58 &905898412
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -56957,10 +56957,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   patrolPoints:
-  - {fileID: 1262025513}
-  - {fileID: 1397880237}
-  - {fileID: 1884130762}
-  - {fileID: 312431876}
+  - {fileID: 374570439}
+  - {fileID: 1702975373}
+  - {fileID: 611820477}
+  - {fileID: 1111327936}
   targetPoint: 0
   speed: 5
   safeArea: {fileID: 469073388}
@@ -57670,7 +57670,7 @@ MonoBehaviour:
   projectileSize: 1
   fireRate: 2
   spawnRadius: 1
-  projectileLifetime: 5
+  projectileLifetime: 3
 --- !u!1 &921386165
 GameObject:
   m_ObjectHideFlags: 0
@@ -60600,10 +60600,10 @@ MonoBehaviour:
   safeArea: {fileID: 1203719343}
   projectilePrefab: {fileID: 724255035314166343, guid: 85f04e52c2eb6504b99a22d36c73ba94, type: 3}
   projectileSpeed: 10
-  projectileSize: 2.5
+  projectileSize: 1.75
   fireRate: 2
   spawnRadius: 1
-  projectileLifetime: 5
+  projectileLifetime: 3
 --- !u!58 &969134043
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -61559,10 +61559,10 @@ MonoBehaviour:
   safeArea: {fileID: 1203719343}
   projectilePrefab: {fileID: 724255035314166343, guid: 85f04e52c2eb6504b99a22d36c73ba94, type: 3}
   projectileSpeed: 10
-  projectileSize: 3
+  projectileSize: 2
   fireRate: 2
   spawnRadius: 1
-  projectileLifetime: 5
+  projectileLifetime: 3
 --- !u!58 &986398762
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -63942,10 +63942,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   patrolPoints:
-  - {fileID: 1262025513}
-  - {fileID: 1397880237}
-  - {fileID: 1884130762}
-  - {fileID: 312431876}
+  - {fileID: 609943406}
+  - {fileID: 1408770871}
+  - {fileID: 2012359640}
+  - {fileID: 1513210211}
   targetPoint: 0
   speed: 5
   safeArea: {fileID: 1163790528}
@@ -66937,10 +66937,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   patrolPoints:
-  - {fileID: 1884130762}
-  - {fileID: 312431876}
-  - {fileID: 1262025513}
-  - {fileID: 1397880237}
+  - {fileID: 2012359640}
+  - {fileID: 1513210211}
+  - {fileID: 609943406}
+  - {fileID: 1408770871}
   targetPoint: 0
   speed: 5
   safeArea: {fileID: 1163790528}
@@ -68921,10 +68921,10 @@ MonoBehaviour:
   safeArea: {fileID: 1448032145}
   projectilePrefab: {fileID: 724255035314166343, guid: 85f04e52c2eb6504b99a22d36c73ba94, type: 3}
   projectileSpeed: 5
-  projectileSize: 2
+  projectileSize: 1.5
   fireRate: 2
   spawnRadius: 1
-  projectileLifetime: 5
+  projectileLifetime: 3
 --- !u!1 &1120875235
 GameObject:
   m_ObjectHideFlags: 0
@@ -69794,10 +69794,10 @@ MonoBehaviour:
   safeArea: {fileID: 1517105753}
   projectilePrefab: {fileID: 724255035314166343, guid: 85f04e52c2eb6504b99a22d36c73ba94, type: 3}
   projectileSpeed: 5
-  projectileSize: 1.5
+  projectileSize: 1.25
   fireRate: 2
   spawnRadius: 1
-  projectileLifetime: 5
+  projectileLifetime: 3
 --- !u!1 &1143704840
 GameObject:
   m_ObjectHideFlags: 0
@@ -70355,10 +70355,10 @@ MonoBehaviour:
   safeArea: {fileID: 741803207}
   projectilePrefab: {fileID: 724255035314166343, guid: 85f04e52c2eb6504b99a22d36c73ba94, type: 3}
   projectileSpeed: 7
-  projectileSize: 2
+  projectileSize: 1.5
   fireRate: 2
   spawnRadius: 1
-  projectileLifetime: 5
+  projectileLifetime: 3
 --- !u!58 &1150404976
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -73260,10 +73260,10 @@ MonoBehaviour:
   safeArea: {fileID: 1448032145}
   projectilePrefab: {fileID: 724255035314166343, guid: 85f04e52c2eb6504b99a22d36c73ba94, type: 3}
   projectileSpeed: 5
-  projectileSize: 2.5
+  projectileSize: 1.75
   fireRate: 2
   spawnRadius: 1
-  projectileLifetime: 5
+  projectileLifetime: 3
 --- !u!1 &1188080854
 GameObject:
   m_ObjectHideFlags: 0
@@ -73726,10 +73726,10 @@ MonoBehaviour:
   safeArea: {fileID: 312426092}
   projectilePrefab: {fileID: 724255035314166343, guid: 85f04e52c2eb6504b99a22d36c73ba94, type: 3}
   projectileSpeed: 5
-  projectileSize: 1.5
+  projectileSize: 1.25
   fireRate: 2
   spawnRadius: 1
-  projectileLifetime: 5
+  projectileLifetime: 3
 --- !u!1 &1199500516
 GameObject:
   m_ObjectHideFlags: 0
@@ -75758,7 +75758,7 @@ MonoBehaviour:
   projectileSize: 1
   fireRate: 2
   spawnRadius: 1
-  projectileLifetime: 5
+  projectileLifetime: 3
 --- !u!1 &1233338390
 GameObject:
   m_ObjectHideFlags: 0
@@ -78820,10 +78820,10 @@ MonoBehaviour:
   safeArea: {fileID: 2014724417}
   projectilePrefab: {fileID: 724255035314166343, guid: 85f04e52c2eb6504b99a22d36c73ba94, type: 3}
   projectileSpeed: 9
-  projectileSize: 2.5
+  projectileSize: 1.75
   fireRate: 2
   spawnRadius: 1
-  projectileLifetime: 5
+  projectileLifetime: 3
 --- !u!58 &1278896535
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -79116,10 +79116,10 @@ MonoBehaviour:
   safeArea: {fileID: 2087841737}
   projectilePrefab: {fileID: 724255035314166343, guid: 85f04e52c2eb6504b99a22d36c73ba94, type: 3}
   projectileSpeed: 8
-  projectileSize: 1.5
+  projectileSize: 1.25
   fireRate: 2
   spawnRadius: 1
-  projectileLifetime: 5
+  projectileLifetime: 3
 --- !u!58 &1280156157
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -80982,8 +80982,8 @@ MonoBehaviour:
   patrolPoints:
   - {fileID: 1922641137}
   - {fileID: 1523228819}
-  - {fileID: 1159500071}
   - {fileID: 1892649702}
+  - {fileID: 1159500071}
   targetPoint: 0
   speed: 5
   safeArea: {fileID: 435990021}
@@ -82234,10 +82234,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   patrolPoints:
-  - {fileID: 1884130762}
-  - {fileID: 312431876}
-  - {fileID: 1262025513}
-  - {fileID: 1397880237}
+  - {fileID: 611820477}
+  - {fileID: 1111327936}
+  - {fileID: 374570439}
+  - {fileID: 1702975373}
   targetPoint: 0
   speed: 5
   safeArea: {fileID: 469073388}
@@ -82686,10 +82686,10 @@ MonoBehaviour:
   safeArea: {fileID: 2087841737}
   projectilePrefab: {fileID: 724255035314166343, guid: 85f04e52c2eb6504b99a22d36c73ba94, type: 3}
   projectileSpeed: 8
-  projectileSize: 2
+  projectileSize: 1.5
   fireRate: 2
   spawnRadius: 1
-  projectileLifetime: 5
+  projectileLifetime: 3
 --- !u!58 &1345330590
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -83671,10 +83671,10 @@ MonoBehaviour:
   safeArea: {fileID: 312426092}
   projectilePrefab: {fileID: 724255035314166343, guid: 85f04e52c2eb6504b99a22d36c73ba94, type: 3}
   projectileSpeed: 5
-  projectileSize: 2.5
+  projectileSize: 1.75
   fireRate: 2
   spawnRadius: 1
-  projectileLifetime: 5
+  projectileLifetime: 3
 --- !u!1 &1364865946
 GameObject:
   m_ObjectHideFlags: 0
@@ -86224,10 +86224,10 @@ MonoBehaviour:
   safeArea: {fileID: 1448032145}
   projectilePrefab: {fileID: 724255035314166343, guid: 85f04e52c2eb6504b99a22d36c73ba94, type: 3}
   projectileSpeed: 5
-  projectileSize: 1.5
+  projectileSize: 1.25
   fireRate: 2
   spawnRadius: 1
-  projectileLifetime: 5
+  projectileLifetime: 3
 --- !u!1 &1401906337
 GameObject:
   m_ObjectHideFlags: 0
@@ -90301,10 +90301,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   patrolPoints:
-  - {fileID: 1884130762}
-  - {fileID: 312431876}
-  - {fileID: 1262025513}
-  - {fileID: 1397880237}
+  - {fileID: 611820477}
+  - {fileID: 1111327936}
+  - {fileID: 374570439}
+  - {fileID: 1702975373}
   targetPoint: 0
   speed: 5
   safeArea: {fileID: 469073388}
@@ -92196,10 +92196,10 @@ MonoBehaviour:
   safeArea: {fileID: 1448032145}
   projectilePrefab: {fileID: 724255035314166343, guid: 85f04e52c2eb6504b99a22d36c73ba94, type: 3}
   projectileSpeed: 5
-  projectileSize: 3
+  projectileSize: 2
   fireRate: 2
   spawnRadius: 1
-  projectileLifetime: 5
+  projectileLifetime: 3
 --- !u!1 &1485665588
 GameObject:
   m_ObjectHideFlags: 0
@@ -96238,10 +96238,10 @@ MonoBehaviour:
   safeArea: {fileID: 741803207}
   projectilePrefab: {fileID: 724255035314166343, guid: 85f04e52c2eb6504b99a22d36c73ba94, type: 3}
   projectileSpeed: 7
-  projectileSize: 3
+  projectileSize: 2
   fireRate: 2
   spawnRadius: 1
-  projectileLifetime: 5
+  projectileLifetime: 3
 --- !u!58 &1536070832
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -96480,10 +96480,10 @@ MonoBehaviour:
   safeArea: {fileID: 1584179314}
   projectilePrefab: {fileID: 724255035314166343, guid: 85f04e52c2eb6504b99a22d36c73ba94, type: 3}
   projectileSpeed: 5
-  projectileSize: 1.5
+  projectileSize: 1.25
   fireRate: 2
   spawnRadius: 1
-  projectileLifetime: 5
+  projectileLifetime: 3
 --- !u!1 &1545647162
 GameObject:
   m_ObjectHideFlags: 0
@@ -98083,10 +98083,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   patrolPoints:
-  - {fileID: 1262025513}
-  - {fileID: 1397880237}
-  - {fileID: 1884130762}
-  - {fileID: 312431876}
+  - {fileID: 374570439}
+  - {fileID: 1702975373}
+  - {fileID: 611820477}
+  - {fileID: 1111327936}
   targetPoint: 0
   speed: 5
   safeArea: {fileID: 469073388}
@@ -100588,7 +100588,7 @@ MonoBehaviour:
   projectileSize: 1
   fireRate: 2
   spawnRadius: 1
-  projectileLifetime: 5
+  projectileLifetime: 3
 --- !u!58 &1613763182
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -103294,7 +103294,7 @@ MonoBehaviour:
   projectileSize: 1
   fireRate: 2
   spawnRadius: 1
-  projectileLifetime: 5
+  projectileLifetime: 3
 --- !u!1 &1646507632
 GameObject:
   m_ObjectHideFlags: 0
@@ -104915,10 +104915,10 @@ MonoBehaviour:
   safeArea: {fileID: 494154590}
   projectilePrefab: {fileID: 724255035314166343, guid: 85f04e52c2eb6504b99a22d36c73ba94, type: 3}
   projectileSpeed: 6
-  projectileSize: 2.5
+  projectileSize: 1.75
   fireRate: 2
   spawnRadius: 1
-  projectileLifetime: 5
+  projectileLifetime: 3
 --- !u!58 &1663862748
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -107333,10 +107333,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   patrolPoints:
-  - {fileID: 1262025513}
-  - {fileID: 1397880237}
-  - {fileID: 1884130762}
-  - {fileID: 312431876}
+  - {fileID: 374570439}
+  - {fileID: 1702975373}
+  - {fileID: 611820477}
+  - {fileID: 1111327936}
   targetPoint: 0
   speed: 5
   safeArea: {fileID: 469073388}
@@ -107618,10 +107618,10 @@ MonoBehaviour:
   safeArea: {fileID: 741803207}
   projectilePrefab: {fileID: 724255035314166343, guid: 85f04e52c2eb6504b99a22d36c73ba94, type: 3}
   projectileSpeed: 7
-  projectileSize: 2.5
+  projectileSize: 1.75
   fireRate: 2
   spawnRadius: 1
-  projectileLifetime: 5
+  projectileLifetime: 3
 --- !u!58 &1702032971
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -108193,7 +108193,7 @@ MonoBehaviour:
   projectileSize: 1
   fireRate: 2
   spawnRadius: 1
-  projectileLifetime: 5
+  projectileLifetime: 3
 --- !u!58 &1706387385
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -108341,10 +108341,10 @@ MonoBehaviour:
   safeArea: {fileID: 1203719343}
   projectilePrefab: {fileID: 724255035314166343, guid: 85f04e52c2eb6504b99a22d36c73ba94, type: 3}
   projectileSpeed: 10
-  projectileSize: 1.5
+  projectileSize: 1.25
   fireRate: 2
   spawnRadius: 1
-  projectileLifetime: 5
+  projectileLifetime: 3
 --- !u!58 &1708402262
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -110050,10 +110050,10 @@ MonoBehaviour:
   safeArea: {fileID: 494154590}
   projectilePrefab: {fileID: 724255035314166343, guid: 85f04e52c2eb6504b99a22d36c73ba94, type: 3}
   projectileSpeed: 6
-  projectileSize: 3
+  projectileSize: 2
   fireRate: 2
   spawnRadius: 1
-  projectileLifetime: 5
+  projectileLifetime: 3
 --- !u!58 &1738887948
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -110285,10 +110285,10 @@ MonoBehaviour:
   safeArea: {fileID: 2014724417}
   projectilePrefab: {fileID: 724255035314166343, guid: 85f04e52c2eb6504b99a22d36c73ba94, type: 3}
   projectileSpeed: 9
-  projectileSize: 1.5
+  projectileSize: 1.25
   fireRate: 2
   spawnRadius: 1
-  projectileLifetime: 5
+  projectileLifetime: 3
 --- !u!58 &1748147109
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -113572,10 +113572,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   patrolPoints:
-  - {fileID: 1262025513}
-  - {fileID: 1397880237}
-  - {fileID: 1884130762}
-  - {fileID: 312431876}
+  - {fileID: 609943406}
+  - {fileID: 1408770871}
+  - {fileID: 2012359640}
+  - {fileID: 1513210211}
   targetPoint: 0
   speed: 5
   safeArea: {fileID: 1163790528}
@@ -114118,10 +114118,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   patrolPoints:
-  - {fileID: 1884130762}
-  - {fileID: 312431876}
-  - {fileID: 1262025513}
-  - {fileID: 1397880237}
+  - {fileID: 2012359640}
+  - {fileID: 1513210211}
+  - {fileID: 609943406}
+  - {fileID: 1408770871}
   targetPoint: 0
   speed: 5
   safeArea: {fileID: 1163790528}
@@ -115097,10 +115097,10 @@ MonoBehaviour:
   safeArea: {fileID: 1203719343}
   projectilePrefab: {fileID: 724255035314166343, guid: 85f04e52c2eb6504b99a22d36c73ba94, type: 3}
   projectileSpeed: 10
-  projectileSize: 2
+  projectileSize: 1.5
   fireRate: 2
   spawnRadius: 1
-  projectileLifetime: 5
+  projectileLifetime: 3
 --- !u!58 &1821877685
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -121618,10 +121618,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   patrolPoints:
-  - {fileID: 1884130762}
-  - {fileID: 312431876}
-  - {fileID: 1262025513}
-  - {fileID: 1397880237}
+  - {fileID: 611820477}
+  - {fileID: 1111327936}
+  - {fileID: 374570439}
+  - {fileID: 1702975373}
   targetPoint: 0
   speed: 5
   safeArea: {fileID: 469073388}
@@ -125764,10 +125764,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   patrolPoints:
-  - {fileID: 1884130762}
-  - {fileID: 312431876}
-  - {fileID: 1262025513}
-  - {fileID: 1397880237}
+  - {fileID: 2012359640}
+  - {fileID: 1513210211}
+  - {fileID: 609943406}
+  - {fileID: 1408770871}
   targetPoint: 0
   speed: 5
   safeArea: {fileID: 1163790528}
@@ -130325,10 +130325,10 @@ MonoBehaviour:
   safeArea: {fileID: 2014724417}
   projectilePrefab: {fileID: 724255035314166343, guid: 85f04e52c2eb6504b99a22d36c73ba94, type: 3}
   projectileSpeed: 9
-  projectileSize: 3
+  projectileSize: 2
   fireRate: 2
   spawnRadius: 1
-  projectileLifetime: 5
+  projectileLifetime: 3
 --- !u!58 &2052900771
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -132759,10 +132759,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   patrolPoints:
-  - {fileID: 1397880237}
-  - {fileID: 1884130762}
-  - {fileID: 312431876}
-  - {fileID: 1262025513}
+  - {fileID: 1408770871}
+  - {fileID: 2012359640}
+  - {fileID: 1513210211}
+  - {fileID: 609943406}
   targetPoint: 0
   speed: 5
   safeArea: {fileID: 1163790528}
@@ -133553,10 +133553,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   patrolPoints:
-  - {fileID: 1884130762}
-  - {fileID: 312431876}
-  - {fileID: 1262025513}
-  - {fileID: 1397880237}
+  - {fileID: 2012359640}
+  - {fileID: 1513210211}
+  - {fileID: 609943406}
+  - {fileID: 1408770871}
   targetPoint: 0
   speed: 5
   safeArea: {fileID: 1163790528}
@@ -137182,10 +137182,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   patrolPoints:
-  - {fileID: 1262025513}
-  - {fileID: 1397880237}
-  - {fileID: 1884130762}
-  - {fileID: 312431876}
+  - {fileID: 374570439}
+  - {fileID: 1702975373}
+  - {fileID: 611820477}
+  - {fileID: 1111327936}
   targetPoint: 0
   speed: 5
   safeArea: {fileID: 469073388}
