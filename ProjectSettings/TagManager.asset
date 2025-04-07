@@ -12,6 +12,8 @@ TagManager:
   - Fact2
   - Fact3
   - Fact4
+  - Timer
+  - OtherTimer
   layers:
   - Default
   - TransparentFX

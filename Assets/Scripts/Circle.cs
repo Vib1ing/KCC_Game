@@ -1,4 +1,7 @@
 using UnityEngine;
+using UnityEngine.UI;
+using TMPro;
+using System;
 
 public class Circle : MonoBehaviour
 {
@@ -13,6 +16,13 @@ public class Circle : MonoBehaviour
     public Canvas canvas2;
     public Canvas canvas3;
     public Canvas canvas4;
+
+    //for stopwatch
+    bool timerActive = false;
+    bool isFinished = false;
+    float currentTime;
+    public TextMeshProUGUI currentTimeText;
+
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -21,6 +31,9 @@ public class Circle : MonoBehaviour
         canvas2.enabled = false;
         canvas3.enabled = false;
         canvas4.enabled = false;
+
+        //for timer
+        currentTime = 0;
     }
 
     void Update()
@@ -31,6 +44,13 @@ public class Circle : MonoBehaviour
         {
             transform.position = currentTeleporter.GetComponent<Teleporter>().getDestination().position;
         }
+
+        //for timer
+        if (timerActive == true){
+            currentTime = currentTime + Time.deltaTime;
+        }
+        TimeSpan time = TimeSpan.FromSeconds(currentTime);
+        currentTimeText.text = time.ToString(@"mm\:ss\:fff");
     }
 
     void Movement()
@@ -45,6 +65,18 @@ public class Circle : MonoBehaviour
         if (collision.CompareTag("Teleporter"))
         {
             currentTeleporter = collision.gameObject;
+        }
+        if (collision.CompareTag("Timer")){
+            if (isFinished == true){
+                isFinished = false;
+                currentTime = 0;
+            }
+            timerActive = true;
+            Debug.Log("Timer started!");
+        }
+        if (collision.CompareTag("OtherTimer")){
+            timerActive = false;
+            isFinished = true;
         }
         if (collision.CompareTag("NewThing")){
             canvas.enabled = true;
