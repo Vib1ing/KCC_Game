@@ -51,7 +51,7 @@ public class Circle : MonoBehaviour
 
         //for timer
         if (timerActive == true){
-            currentTime = currentTime + Time.deltaTime;
+            currentTime = currentTime + Time.unscaledDeltaTime;
         }
         TimeSpan time = TimeSpan.FromSeconds(currentTime);
         currentTimeText.text = time.ToString(@"mm\:ss\:fff");

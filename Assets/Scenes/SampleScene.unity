@@ -817,7 +817,11 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: placeholder
+  m_text: Did you know? Naked mole rats are one of the very few organisms to be heavily
+    resistant to cancer! By producing a sugar called hyaluronan, the substnace acts
+    as a lubricant for the body, inhibiting cancer cell growth and tumor formation.
+    So, although they are seen as ugly and are often overlooked, they might be a
+    major avenue to modern cancer treatment!
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -29572,7 +29576,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 474925698}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 2}
+  m_LocalPosition: {x: 0, y: 0, z: 1}
   m_LocalScale: {x: 0.458125, y: 0.458125, z: 0.458125}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -30890,7 +30894,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 504423457}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 2}
   m_LocalScale: {x: 0.02445942, y: 0.02445942, z: 0.02445942}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -96334,7 +96338,12 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: placeholder
+  m_text: "Everyone knows about the footballing talent of Lionel Messi, but not many
+    know about his cancer initiatives! The partnership of the Leo Messi Foundation
+    with the Barca Foundation helped construct the Saint Joan de D\xE9u (SJD) Pediatric
+    Cancer Center in Barcelona. Messi\u2019s famous two-finger celebration kickstarted
+    the #ParaLosValientes (#ForTheBrave) campaign, which has raised over $4.5 million
+    for the hospital so far!\r\n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -116270,7 +116279,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: placeholder
+  m_text: Cancer is one of the world's largest health problems. The Global Burden
+    of Disease estimates that around 10 million people died of cancer in 2019, and
+    around one-in-six deaths worldwide were from cancer.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -137839,7 +137850,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: placeholder
+  m_text: Oncologists tend to be very satisfied with their career choice. Approximately
+    82.5% were satisfied with being an oncologist, for which those that were in academic
+    practices liked it more than those in private practices. We should thank them,
+    because they are the ones helping to fight cancer!
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -137866,8 +137880,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 2.5
-  m_fontSizeBase: 2.5
+  m_fontSize: 3
+  m_fontSizeBase: 3
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
