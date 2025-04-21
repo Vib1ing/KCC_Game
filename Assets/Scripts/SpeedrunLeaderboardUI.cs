@@ -14,7 +14,7 @@ public class SpeedrunLeaderboardUI : MonoBehaviour
 
     void UpdateLeaderboardUI(List<FirebaseEntry> entries)
     {
-        leaderboardText.text = "🏁 Speedrun Leaderboard\n";
+        leaderboardText.text = "Leaderboard\n";
         int rank = 1;
 
         foreach (var entry in entries)

@@ -23,8 +23,6 @@ public class Circle : MonoBehaviour
     float currentTime;
     public TextMeshProUGUI currentTimeText;
 
-    public GameObject nameInputPanel;
-
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -33,8 +31,6 @@ public class Circle : MonoBehaviour
         canvas2.enabled = false;
         canvas3.enabled = false;
         canvas4.enabled = false;
-
-        nameInputPanel.SetActive(false);
 
         //for timer
         currentTime = 0;
@@ -81,8 +77,6 @@ public class Circle : MonoBehaviour
         if (collision.CompareTag("OtherTimer")){
             timerActive = false;
             isFinished = true;
-
-            nameInputPanel.SetActive(true);
         }
         if (collision.CompareTag("NewThing")){
             canvas.enabled = true;
