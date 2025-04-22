@@ -19,7 +19,7 @@
             {
                 "type": "System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
                 "key": "buildOutputDirList",
-                "value": "{\"m_Value\":\"C:/Users/elija/OneDrive/Desktop/KCC_Game_Evades/WebGL Builds/kccgame;;;;;;;;;\"}"
+                "value": "{\"m_Value\":\"C:/Users/joshi/Downloads/KCC_Game/WebGL Builds/workingkccgame;C:/Users/elija/OneDrive/Desktop/KCC_Game_Evades/WebGL Builds/kccgame;;;;;;;;\"}"
             }
         ]
     }
