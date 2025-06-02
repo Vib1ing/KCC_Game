@@ -17,7 +17,7 @@ public class Circle : MonoBehaviour
     public Canvas canvas3;
     public Canvas canvas4;
 
-    //for stopwatch
+    // Timer variables
     bool timerActive = false;
     bool isFinished = false;
     float currentTime;
@@ -32,7 +32,6 @@ public class Circle : MonoBehaviour
         canvas3.enabled = false;
         canvas4.enabled = false;
 
-        //for timer
         currentTime = 0;
     }
 
@@ -45,12 +44,13 @@ public class Circle : MonoBehaviour
             transform.position = currentTeleporter.GetComponent<Teleporter>().getDestination().position;
         }
 
-        //for timer
-        if (timerActive == true){
-            currentTime = currentTime + Time.unscaledDeltaTime;
+        if (timerActive)
+        {
+            currentTime += Time.unscaledDeltaTime;
         }
-        TimeSpan time = TimeSpan.FromSeconds(currentTime);
-        currentTimeText.text = time.ToString(@"mm\:ss\:fff");
+
+        TimeSpan timeSpan = TimeSpan.FromSeconds(currentTime);
+        currentTimeText.text = timeSpan.ToString(@"mm\:ss\:fff");
     }
 
     void Movement()
@@ -66,31 +66,43 @@ public class Circle : MonoBehaviour
         {
             currentTeleporter = collision.gameObject;
         }
-        if (collision.CompareTag("Timer")){
-            if (isFinished == true){
+        if (collision.CompareTag("Timer"))
+        {
+            if (isFinished)
+            {
                 isFinished = false;
                 currentTime = 0;
             }
             timerActive = true;
             Debug.Log("Timer started!");
         }
-        if (collision.CompareTag("OtherTimer")){
+        if (collision.CompareTag("OtherTimer"))
+        {
             timerActive = false;
             isFinished = true;
+            Debug.Log($"Timer stopped! Final time: {currentTime:0.000}s");
+
+            // Submit the final time to the leaderboard
+            UGSLeaderboardManager.SubmitPlayerScore(currentTime);
         }
-        if (collision.CompareTag("NewThing")){
+        if (collision.CompareTag("NewThing"))
+        {
             canvas.enabled = true;
         }
-        if (collision.CompareTag("Fact1")){
+        if (collision.CompareTag("Fact1"))
+        {
             canvas1.enabled = true;
         }
-        if (collision.CompareTag("Fact2")){
+        if (collision.CompareTag("Fact2"))
+        {
             canvas2.enabled = true;
         }
-        if (collision.CompareTag("Fact3")){
+        if (collision.CompareTag("Fact3"))
+        {
             canvas3.enabled = true;
         }
-        if (collision.CompareTag("Fact4")){
+        if (collision.CompareTag("Fact4"))
+        {
             canvas4.enabled = true;
         }
     }
@@ -111,3 +123,6 @@ public class Circle : MonoBehaviour
         canvas4.enabled = false;
     }
 }
+
+
+
