@@ -1,17 +1,13 @@
 using UnityEngine;
 using TMPro;
-using Unity.Services.Core;
 using Unity.Services.Authentication;
 using Unity.Services.Leaderboards;
-using System.Threading.Tasks;
 using System;
 
 public class UGSLeaderboardManager : MonoBehaviour
 {
-    [Header("Leaderboard Settings")]
     public string leaderboardId = "SpeedrunLeaderboard"; // Replace with your actual Leaderboard ID
 
-    [Header("UI References")]
     public TMP_InputField playerNameInput;
     public Transform leaderboardContainer;
     public GameObject leaderboardEntryPrefab;
@@ -27,37 +23,6 @@ public class UGSLeaderboardManager : MonoBehaviour
         canvas.enabled = false;
     }
 
-    async void Awake()
-    {
-        if (instance != null && instance != this)
-        {
-            Destroy(gameObject);
-            return;
-        }
-        instance = this;
-        DontDestroyOnLoad(gameObject);
-
-        await InitializeUGSAsync();
-    }
-
-    private async Task InitializeUGSAsync()
-    {
-        try
-        {
-            await UnityServices.InitializeAsync();
-
-            if (!AuthenticationService.Instance.IsSignedIn)
-            {
-                await AuthenticationService.Instance.SignInAnonymouslyAsync();
-                Debug.Log("Signed in anonymously");
-            }
-        }
-        catch (Exception e)
-        {
-            Debug.LogError("UGS Initialization Failed: " + e.Message);
-        }
-    }
-
     public async void SubmitScore(float timeInSeconds)
     {
         if (!AuthenticationService.Instance.IsSignedIn)
@@ -68,12 +33,12 @@ public class UGSLeaderboardManager : MonoBehaviour
 
         // Explicit cast to float to avoid CS0266 error
         long score = Mathf.RoundToInt((float)(timeInSeconds * 1000)); // Convert to milliseconds
-        string displayName = string.IsNullOrWhiteSpace(playerNameInput.text) ? "Guest" : playerNameInput.text;
+        string displayName = string.IsNullOrWhiteSpace(PlayerNameManager.playerName) ? "Guest" : PlayerNameManager.playerName;
 
         try
         {
             // Update the player's display name
-            await AuthenticationService.Instance.UpdatePlayerNameAsync(displayName);
+            
 
             // Submit the score
             await LeaderboardsService.Instance.AddPlayerScoreAsync(

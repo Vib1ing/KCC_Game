@@ -1,7 +1,6 @@
 using Unity.Services.Core;
 using Unity.Services.Authentication;
 using UnityEngine;
-using System.Threading.Tasks;
 
 public class UGSManager : MonoBehaviour
 {
