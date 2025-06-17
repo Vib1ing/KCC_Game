@@ -15,13 +15,6 @@ public class UGSLeaderboardManager : MonoBehaviour
     private static UGSLeaderboardManager instance;
     public static UGSLeaderboardManager Instance => instance;
 
-    public Canvas canvas;
-
-    void Start()
-    {
-        canvas.enabled = false;
-    }
-
     public async void SubmitScore(float timeInSeconds)
     {
         if (!AuthenticationService.Instance.IsSignedIn)
