@@ -9,7 +9,7 @@ public class UGSLeaderboardManager : MonoBehaviour
 {
     public static UGSLeaderboardManager Instance { get; private set; }
 
-    public string leaderboardId = "SpeedrunLeaderboard"; // Replace with your actual Leaderboard ID
+    public const string leaderboardId = "SpeedrunLeaderboard"; // Replace with your actual Leaderboard ID
 
     public static string leaderboardTopTen = "";
 
@@ -41,7 +41,8 @@ public class UGSLeaderboardManager : MonoBehaviour
         try
         {
             // Update the player's display name
-            var metadata = new Dictionary<string, string>
+            await AuthenticationService.Instance.UpdatePlayerNameAsync(displayName);
+            var metadata = new Dictionary<string, object>
             {
                 { "realName", displayName }
             };
@@ -57,14 +58,14 @@ public class UGSLeaderboardManager : MonoBehaviour
             );
 
             Debug.Log($"Score submitted: {score}ms for player {displayName}");
-        } 
+        }
         catch (Exception e)
         {
             Debug.LogError("Failed to submit score: " + e.Message);
         }
     }
 
-    public async void GetLeaderboard()
+    public static async void RefreshLeaderboard()
     {
         if (!AuthenticationService.Instance.IsSignedIn)
         {
@@ -75,16 +76,33 @@ public class UGSLeaderboardManager : MonoBehaviour
         {
             var scoresResponse = await LeaderboardsService.Instance.GetScoresAsync(
                 leaderboardId,
-                new GetScoresOptions { Limit = 10 }
+                new GetScoresOptions
+                {
+                    Limit = 10,
+                    IncludeMetadata = true
+                }
             );
 
             string text = "";
 
             foreach (var entry in scoresResponse.Results)
             {
-                float timeInSeconds = (float)entry.Score / 1000f;
-                string name = string.IsNullOrEmpty(entry.PlayerName) ? "Guest" : entry.PlayerName;
-                text += $"{entry.Rank + 1}. {name} - {timeInSeconds:0.000}s\n";
+                string name;
+                string realName = GetDisplayNameFromMetadata(entry.Metadata);
+                if (!string.IsNullOrEmpty(realName)) name = realName;
+                else if (!string.IsNullOrEmpty(entry.PlayerName)) name = entry.PlayerName;
+                else name = "Guest";
+                TimeSpan timeSpan = TimeSpan.FromMilliseconds(entry.Score);
+                string formattedTime = string.Format("{0:D2}:{1:D2}:{2:D2}.{3:D3}",
+                    timeSpan.Hours, timeSpan.Minutes, timeSpan.Seconds, timeSpan.Milliseconds);
+                string row = $"{entry.Rank + 1}. {name} - {formattedTime}\n";
+                if (realName == PlayerPrefs.GetString("PlayerName", "Guest")
+                    || entry.PlayerName == AuthenticationService.Instance.PlayerName
+                    || entry.PlayerId == AuthenticationService.Instance.PlayerId)
+                {
+                    row = BeautifyPersonalRow(row);
+                }
+                text += row;
             }
 
             leaderboardTopTen = text;
@@ -93,6 +111,28 @@ public class UGSLeaderboardManager : MonoBehaviour
         catch (Exception e)
         {
             Debug.LogError("Failed to load leaderboard: " + e.Message);
+        }
+    }
+
+    private static string BeautifyPersonalRow(string text)
+    {
+        return $"<b><color=#66CCFF>{text}</color></b>";
+    }
+
+    private static string GetDisplayNameFromMetadata(string metadataJson)
+    {
+        if (string.IsNullOrEmpty(metadataJson))
+            return null;
+
+        try
+        {
+            var meta = JsonUtility.FromJson<LeaderboardMetadata>(metadataJson);
+            return string.IsNullOrEmpty(meta.realName) ? null : meta.realName;
+        }
+        catch (Exception e)
+        {
+            Debug.LogWarning($"Failed to parse metadata: {e.Message}");
+            return null;
         }
     }
 
@@ -110,5 +150,8 @@ public class UGSLeaderboardManager : MonoBehaviour
     }
 }
 
-
-
+[Serializable]
+class LeaderboardMetadata
+{
+    public string realName;
+}
