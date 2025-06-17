@@ -54,7 +54,7 @@ public class Circle : MonoBehaviour
         }
 
         TimeSpan timeSpan = TimeSpan.FromSeconds(currentTime);
-        currentTimeText.text = timeSpan.ToString(@"mm\:ss\:fff");
+        currentTimeText.text = timeSpan.ToString(@"hh\:mm\:ss\.fff");
     }
 
     void Movement()

@@ -9,11 +9,19 @@ public class PlayerNameManager : MonoBehaviour
     public TMP_Text currentNameText;
     public static string playerName;
 
-    void Awake()
+    async void Awake()
     {
         // Ensure the player name is loaded from PlayerPrefs
         playerName = PlayerPrefs.GetString("PlayerName", "Guest");
         loadName();
+        try
+        {
+            await AuthenticationService.Instance.UpdatePlayerNameAsync(playerName);
+        }
+        catch (Exception e)
+        {
+            Debug.LogError("Failed to update player name: " + e.Message);
+        }
     }
 
     public async void setName()
@@ -38,7 +46,6 @@ public class PlayerNameManager : MonoBehaviour
         catch (Exception e)
         {
             Debug.LogError("Failed to update player name: " + e.Message);
-            return;
         }
         Debug.Log($"Player name set to: {playerName}");
     }

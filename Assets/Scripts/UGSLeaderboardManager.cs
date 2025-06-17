@@ -3,17 +3,28 @@ using TMPro;
 using Unity.Services.Authentication;
 using Unity.Services.Leaderboards;
 using System;
+using System.Collections.Generic;
 
 public class UGSLeaderboardManager : MonoBehaviour
 {
+    public static UGSLeaderboardManager Instance { get; private set; }
+
     public string leaderboardId = "SpeedrunLeaderboard"; // Replace with your actual Leaderboard ID
 
-    public Transform leaderboardContainer;
-    public GameObject leaderboardEntryPrefab;
+    public static string leaderboardTopTen = "";
 
-    // Singleton instance
-    private static UGSLeaderboardManager instance;
-    public static UGSLeaderboardManager Instance => instance;
+    void Awake()
+    {
+        if (Instance == null)
+        {
+            Instance = this;
+            DontDestroyOnLoad(gameObject); // Optional: persists across scenes
+        }
+        else
+        {
+            Destroy(gameObject); // Prevent duplicates
+        }
+    }
 
     public async void SubmitScore(float timeInSeconds)
     {
@@ -25,36 +36,39 @@ public class UGSLeaderboardManager : MonoBehaviour
 
         // Explicit cast to float to avoid CS0266 error
         long score = Mathf.RoundToInt((float)(timeInSeconds * 1000)); // Convert to milliseconds
-        string displayName = string.IsNullOrWhiteSpace(PlayerNameManager.playerName) ? "Guest" : PlayerNameManager.playerName;
+        string displayName = PlayerPrefs.GetString("PlayerName", "Guest");
 
         try
         {
             // Update the player's display name
-            
+            var metadata = new Dictionary<string, string>
+            {
+                { "realName", displayName }
+            };
 
             // Submit the score
             await LeaderboardsService.Instance.AddPlayerScoreAsync(
                 leaderboardId,
-                score
+                score,
+                new AddPlayerScoreOptions
+                {
+                    Metadata = metadata
+                }
             );
 
             Debug.Log($"Score submitted: {score}ms for player {displayName}");
-
-            // Automatically load leaderboard after submission
-            LoadLeaderboard();
-        }
+        } 
         catch (Exception e)
         {
             Debug.LogError("Failed to submit score: " + e.Message);
         }
     }
 
-    public async void LoadLeaderboard()
+    public async void GetLeaderboard()
     {
         if (!AuthenticationService.Instance.IsSignedIn)
         {
             Debug.LogWarning("Not signed in. Cannot load leaderboard.");
-            return;
         }
 
         try
@@ -64,19 +78,17 @@ public class UGSLeaderboardManager : MonoBehaviour
                 new GetScoresOptions { Limit = 10 }
             );
 
-            // Clear previous entries
-            foreach (Transform child in leaderboardContainer)
-            {
-                Destroy(child.gameObject);
-            }
+            string text = "";
 
             foreach (var entry in scoresResponse.Results)
             {
-                var item = Instantiate(leaderboardEntryPrefab, leaderboardContainer);
                 float timeInSeconds = (float)entry.Score / 1000f;
                 string name = string.IsNullOrEmpty(entry.PlayerName) ? "Guest" : entry.PlayerName;
-                item.GetComponent<TMP_Text>().text = $"{entry.Rank + 1}. {name} - {timeInSeconds:0.000}s";
+                text += $"{entry.Rank + 1}. {name} - {timeInSeconds:0.000}s\n";
             }
+
+            leaderboardTopTen = text;
+            Debug.Log("Leaderboard loaded successfully:\n" + leaderboardTopTen);
         }
         catch (Exception e)
         {
