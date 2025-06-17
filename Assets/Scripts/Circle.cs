@@ -17,6 +17,8 @@ public class Circle : MonoBehaviour
     public Canvas canvas3;
     public Canvas canvas4;
 
+    public Canvas nameInput;
+
     // Timer variables
     bool timerActive = false;
     bool isFinished = false;
@@ -31,6 +33,8 @@ public class Circle : MonoBehaviour
         canvas2.enabled = false;
         canvas3.enabled = false;
         canvas4.enabled = false;
+
+        nameInput.enabled = false;
 
         currentTime = 0;
     }
