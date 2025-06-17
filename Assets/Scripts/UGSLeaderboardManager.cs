@@ -8,7 +8,6 @@ public class UGSLeaderboardManager : MonoBehaviour
 {
     public string leaderboardId = "SpeedrunLeaderboard"; // Replace with your actual Leaderboard ID
 
-    public TMP_InputField playerNameInput;
     public Transform leaderboardContainer;
     public GameObject leaderboardEntryPrefab;
 
