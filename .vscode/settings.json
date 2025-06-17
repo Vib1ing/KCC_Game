@@ -56,5 +56,5 @@
         "temp/": true,
         "Temp/": true
     },
-    "dotnet.defaultSolution": "KCC_Game_Evades.sln"
+    "dotnet.defaultSolution": "KCC_Game.sln"
 }
