@@ -12,6 +12,10 @@ public class LeaderboardMenu : MonoBehaviour
         RequestRefresh();
     }
 
+    void Start() {
+        RequestRefresh();
+    }
+
     public void RequestRefresh()
     {
         _ = RefreshCurrentLeaderboard();
