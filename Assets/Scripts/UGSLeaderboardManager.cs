@@ -4,6 +4,7 @@ using Unity.Services.Authentication;
 using Unity.Services.Leaderboards;
 using System;
 using System.Collections.Generic;
+using System.Threading.Tasks;
 
 public class UGSLeaderboardManager : MonoBehaviour
 {
@@ -65,7 +66,7 @@ public class UGSLeaderboardManager : MonoBehaviour
         }
     }
 
-    public static async void RefreshLeaderboard()
+    public static async Task RefreshLeaderboard(int rowCount = 10)
     {
         if (!AuthenticationService.Instance.IsSignedIn)
         {
@@ -78,13 +79,13 @@ public class UGSLeaderboardManager : MonoBehaviour
                 leaderboardId,
                 new GetScoresOptions
                 {
-                    Limit = 10,
+                    Limit = rowCount,
                     IncludeMetadata = true
                 }
             );
 
             string text = "";
-
+            int i = 1;
             foreach (var entry in scoresResponse.Results)
             {
                 string name;
@@ -103,6 +104,12 @@ public class UGSLeaderboardManager : MonoBehaviour
                     row = BeautifyPersonalRow(row);
                 }
                 text += row;
+                i++;
+            }
+
+            for (; i <= rowCount; i++)
+            {
+                text += $"{i}. ---\n";
             }
 
             leaderboardTopTen = text;
