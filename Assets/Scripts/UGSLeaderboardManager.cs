@@ -90,16 +90,26 @@ public class UGSLeaderboardManager : MonoBehaviour
             {
                 string name;
                 string realName = GetDisplayNameFromMetadata(entry.Metadata);
-                if (!string.IsNullOrEmpty(realName)) name = realName;
-                else if (!string.IsNullOrEmpty(entry.PlayerName)) name = entry.PlayerName;
+                if (!string.IsNullOrWhiteSpace(realName)) name = realName;
+                else if (!string.IsNullOrWhiteSpace(entry.PlayerName)) name = entry.PlayerName;
                 else name = "Guest";
                 TimeSpan timeSpan = TimeSpan.FromMilliseconds(entry.Score);
                 string formattedTime = string.Format("{0:D2}:{1:D2}:{2:D2}.{3:D3}",
                     timeSpan.Hours, timeSpan.Minutes, timeSpan.Seconds, timeSpan.Milliseconds);
                 string row = $"{entry.Rank + 1}. {name} - {formattedTime}\n";
-                if (realName == PlayerPrefs.GetString("PlayerName", "Guest")
-                    || entry.PlayerName == AuthenticationService.Instance.PlayerName
-                    || entry.PlayerId == AuthenticationService.Instance.PlayerId)
+                bool isPersonal =
+                    entry.PlayerId == AuthenticationService.Instance.PlayerId ||
+                    (
+                        !string.IsNullOrWhiteSpace(realName) &&
+                        realName == PlayerPrefs.GetString("PlayerName", "Guest") &&
+                        realName != "Guest"
+                    ) ||
+                    (
+                        !string.IsNullOrWhiteSpace(entry.PlayerName) &&
+                        entry.PlayerName == AuthenticationService.Instance.PlayerName &&
+                        entry.PlayerName != "Guest"
+                    );
+                if (isPersonal)
                 {
                     row = BeautifyPersonalRow(row);
                 }
@@ -128,13 +138,13 @@ public class UGSLeaderboardManager : MonoBehaviour
 
     private static string GetDisplayNameFromMetadata(string metadataJson)
     {
-        if (string.IsNullOrEmpty(metadataJson))
+        if (string.IsNullOrWhiteSpace(metadataJson))
             return null;
 
         try
         {
             var meta = JsonUtility.FromJson<LeaderboardMetadata>(metadataJson);
-            return string.IsNullOrEmpty(meta.realName) ? null : meta.realName;
+            return string.IsNullOrWhiteSpace(meta.realName) ? null : meta.realName;
         }
         catch (Exception e)
         {
