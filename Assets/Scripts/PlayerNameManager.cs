@@ -37,6 +37,9 @@ public class PlayerNameManager : MonoBehaviour
             return;
         }
         playerName = nameInput.text.Trim();
+
+        playerName = await ProfanityDetector.Censor(playerName);
+
         PlayerPrefs.SetString("PlayerName", playerName);
         loadName();
         try
