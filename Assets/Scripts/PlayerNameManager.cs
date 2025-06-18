@@ -36,7 +36,9 @@ public class PlayerNameManager : MonoBehaviour
             Debug.LogWarning("Player name cannot exceed 20 characters.");
             return;
         }
+        
         playerName = nameInput.text.Trim();
+        nameInput.text = string.Empty;
 
         playerName = await ProfanityDetector.Censor(playerName);
 
